@@ -11,7 +11,7 @@ import {route} from 'ziggy-js';
             <div class="flex flex-grow items-center justify-between py-4 px-4">
                 <div class="flex items-center gap-2">
                     <Link :href="route('home')">
-                        <ApplicationLogo class="text-xl"/>
+                        <ApplicationLogo class="h-8"/>
                     </Link>
                 </div>
                 <div class="grow"></div>

@@ -1,6 +1,7 @@
 import './bootstrap';
 import '../css/app.css';
 import 'primeicons/primeicons.css';
+import '@vuepic/vue-datepicker/dist/main.css';
 
 import {createApp, h, DefineComponent} from 'vue';
 import {createInertiaApp} from '@inertiajs/vue3';
@@ -12,6 +13,7 @@ import ConfirmationService from 'primevue/confirmationservice';
 import DialogService from 'primevue/dialogservice';
 import Ripple from 'primevue/ripple';
 import StyleClass from 'primevue/styleclass';
+import VueDatePicker from '@vuepic/vue-datepicker';
 import FormError from '@/Components/FormError.vue';
 
 import AppState from '@/plugins/appState';
@@ -37,6 +39,7 @@ createInertiaApp({
     },
     setup({el, App, props, plugin}) {
         createApp({render: () => h(App, props)})
+            .component('VueDatePicker', VueDatePicker)
             .component('ThemeSwitcher', ThemeSwitcher)
             .component('FormError', FormError)
             .directive('ripple', Ripple)

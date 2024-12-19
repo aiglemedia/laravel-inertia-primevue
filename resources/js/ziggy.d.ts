@@ -26,6 +26,68 @@ declare module 'ziggy-js' {
     "sub.pageone": [],
     "sub.pagetwo": [],
     "dashboard": [],
+    "instruments.index": [],
+    "instruments.create": [],
+    "instruments.store": [],
+    "instruments.show": [
+        {
+            "name": "instrument",
+            "required": true,
+            "binding": "id"
+        }
+    ],
+    "instruments.edit": [
+        {
+            "name": "instrument",
+            "required": true,
+            "binding": "id"
+        }
+    ],
+    "instruments.update": [
+        {
+            "name": "instrument",
+            "required": true,
+            "binding": "id"
+        }
+    ],
+    "instruments.destroy": [
+        {
+            "name": "instrument",
+            "required": true,
+            "binding": "id"
+        }
+    ],
+    "trades.index": [],
+    "trades.create": [],
+    "trades.store": [],
+    "trades.show": [
+        {
+            "name": "trade",
+            "required": true,
+            "binding": "id"
+        }
+    ],
+    "trades.edit": [
+        {
+            "name": "trade",
+            "required": true,
+            "binding": "id"
+        }
+    ],
+    "trades.update": [
+        {
+            "name": "trade",
+            "required": true,
+            "binding": "id"
+        }
+    ],
+    "trades.destroy": [
+        {
+            "name": "trade",
+            "required": true,
+            "binding": "id"
+        }
+    ],
     "profile.edit": [],
     "profile.update": [],
     "profile.destroy": [],

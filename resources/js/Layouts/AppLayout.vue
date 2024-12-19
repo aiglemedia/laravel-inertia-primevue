@@ -58,8 +58,9 @@ onUpdated(() => {
                     </template>
                 </ConfirmDialog>
             </main>
-            <footer class="flex justify-center py-1">
-                <div class="text-sm text-gray-500">Copyrights - {{ new Date().getFullYear() }}</div>
+            <footer class="flex justify-center gap-2 py-1 text-sm text-gray-500">
+                <span>Copyrights - {{ new Date().getFullYear() }}</span>
+                <span>Made With <span class="text-red-600">♥</span> aasiph.</span>
             </footer>
         </div>
     </div>
