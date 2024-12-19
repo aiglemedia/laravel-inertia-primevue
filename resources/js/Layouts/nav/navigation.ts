@@ -15,19 +15,19 @@ export const NavigationLinks: MenuItem[] = [
         path: route('dashboard'),
     },
     {
-        title: 'Submenu Example',
+        title: 'Instrument',
         icon: 'dataset_linked',
-        path: 'sub',
+        path: 'instruments',
         children: [
             {
-                title: 'Sub 1',
-                icon: 'link',
-                path: route('sub.pageone'),
+                title: 'List',
+                icon: 'list',
+                path: route('instruments.index'),
             },
             {
-                title: 'Sub 2',
-                icon: 'link',
-                path: route('sub.pagetwo'),
+                title: 'New',
+                icon: 'add',
+                path: route('instruments.create'),
             },
         ],
     },
